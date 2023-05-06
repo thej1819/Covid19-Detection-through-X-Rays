@@ -62,18 +62,18 @@ This function will return batches of images from the subdirectories
 
 Arguments:
 
-        directory: Directory where the data is located. If labels are "inferred", it should contain subdirectories, each containing images for a class. Otherwise, the directory structure is ignored.
+        directory: Directory where the data is located. If labels are "inferred", it should contain subdirectories, each containing images for a class. Otherwise,                    the directory structure is ignored.
         batch_size: Size of the batches of data which is  32.
-        target_size: Size to resize images after they are read from disk.
+        target_size: Size to resize images after they are read from disk. 
         class_mode:
 
--  ‘int': means that the labels are encoded as integers (e.g. for sparse_categorical_crossentropy loss).
+                   -  ‘int': means that the labels are encoded as integers (e.g. for sparse_categorical_crossentropy loss).
 
-- 'categorical' means that the labels are encoded as a categorical vector (e.g. for categorical_crossentropy loss).
+                   - 'categorical' means that the labels are encoded as a categorical vector (e.g. for categorical_crossentropy loss).
 
-- 'binary' means that the labels (there can be only 2) are encoded as float32 scalars with values 0 or 1 (e.g. for binary_crossentropy).
+                   - 'binary' means that the labels (there can be only 2) are encoded as float32 scalars with values 0 or 1 (e.g. for binary_crossentropy).
 
- - None (no labels).
+                   - None (no labels).
  
  # Model Building
 ## Pre-Trained CNN Model As A Feature Extractor
@@ -111,11 +111,11 @@ fit_generator functions used to train a deep learning neural network
  
 Arguments:
 
-?        steps_per_epoch: it specifies the total number of steps taken from the generator as soon as one epoch is finished and the next epoch has started. We can calculate the value of     steps_per_epoch as the total number of samples in your dataset divided by the batch size.
+-        steps_per_epoch: it specifies the total number of steps taken from the generator as soon as one epoch is finished and the next epoch has started. We can calculate the value of     steps_per_epoch as the total number of samples in your dataset divided by the batch size.
 
-?        Epochs: an integer and number of epochs we want to train our model for.
+-        Epochs: an integer and number of epochs we want to train our model for.
 
-?        validation_data can be either:
+-        validation_data can be either:
 
                       - an inputs and targets list
 
@@ -125,7 +125,7 @@ Arguments:
 
                         the loss and metrics for any model after any epoch has ended.
 
-?        validation_steps: only if the validation_data is a generator then only this argument
+-        validation_steps: only if the validation_data is a generator then only this argument
 
 can be used. It specifies the total number of steps taken from the generator before it is
 
@@ -145,15 +145,15 @@ An H5 file is a data file saved in the Hierarchical Data Format (HDF). It contai
   
 # Run The Application
 
-?          Open the Command prompt from the start menu.
+-          Open the Command prompt from the start menu.
 
-?          Navigate to the folder where your Python script is.
+-          Navigate to the folder where your Python script is.
 
-?          Now type the “python app.py” command.
+-          Now type the “python app.py” command.
 
-?          Navigate to the localhost where you can view your web page.
+-          Navigate to the localhost where you can view your web page.
 
-?          Click on the predict button from the top right corner, enter the inputs, click on the submit button, and see the result/prediction on the web.
+-          Click on the predict button from the top right corner, enter the inputs, click on the submit button, and see the result/prediction on the web.
 
 
 The home page looks like this. When you click on the button “Drop in the image you want to validate!”,
