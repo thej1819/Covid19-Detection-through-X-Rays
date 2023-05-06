@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Covid-19 Detection from Lung X-Rays  </title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css') }}">
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <!-- Move to up button -->
+  <div class="scroll-button">
+    
+  </div>
+  <!-- navgaition menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Covi-Sift</a></div>
+      <ul class="menu">
+          
+          <li><a href="#about">About</a></li>
+          <li><a href="#precautions">Precautions</a></li>
+          <li><a href="#vaccinations">Vaccinations</a></li>
+          <li><a href="#contact">Test</a></li>
+         
+      </ul>
+      
+    </div>
+    
+  </nav>
+
+<!-- Home Section Start -->
+ <section class="home" id="home">
+   <div class="home-content">
+     <div class="text">
+       <div class="text-two">Smart Assistant for Covid Protection</div>
+       <div class="text-one">Be SAFE from coronavirus infection</div>
+       <div class="text-one">Be SMART & inform yourself about it</div>
+       <div class = "text-one">Be KIND & support one another</div>
+       <div class="text-three">FIND OUT MORE</div>
+     </div>
+     
+   </div>
+ </section>
+
+<!-- About Section Start -->
+<section class="about" id="about">
+  <div class="content">
+    <div class="title"><span>Glance</span></div>
+  <div class="about-details">
+    
+    <div class="right">
+      <div class="topic"></div>
+      <p>Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus. Most people infected with the virus will experience mild to moderate respiratiory illness and recover without requiring special treatment. However, some will become seriously ill and require medical attention.</p>
+      <div class="button" align = "center">
+        <button>GET STARTED!</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<!-- Precautions Section Start -->
+<section class="precautions" id="precautions">
+    <div class="content">
+      <div class="title"><span>Precautions</span></div>
+      <div class="boxes">
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-life-ring" aria-hidden="true"></i>
+        </div>
+        <div class="topic">Wear Mask</div>
+        <p>Wear mask-protect others and yourself</p>
+      </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-thumbs-up" aria-hidden = "true"></i>
+        </div>
+        <div class="topic">Santize Frequently</div>
+        <p>Protect yourself from invisible.</p>
+      </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-users"></i>
+        </div>
+        <div class="topic">Social Distancing</div>
+        <p>Break the chanin through distancing</p>
+      </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fa fa-heart"></i>
+        </div>
+        <div class="topic">Boost Immunity</div>
+        <p>Eating healthy food and Exercise daily to string the Immunity
+        </p>
+      </div>
+       
+    </div>
+    </div>
+  </section>
+<!--Vaccinations section Start-->
+<section  id = "vaccinations">
+    <div class = "content">
+        <div class = "title"><span>Vaccinations</span></div>
+        <div class="box">
+            <div class="vac1">
+                <div class="vac2">
+                  <div class="dim">
+                    <img src="static/images/a1.jpg" class="image">
+                    <div class="overlay overlayTop"></div>
+                  </div>
+                  <div class="dim">
+                    <img src="static/images/i1.png" class="image">
+                    <div class="overlay overlayTop"></div>
+                  </div>
+                  <div class="dim">
+                    <img src="static/images/i1.png" class="image">
+                    <div class="overlay overlayTop"></div>
+                  </div>
+                  
+                  
+                </div>
+                <div class="vac2">
+                  <div class="dim">
+                    <img src="static/images/i1.png" class="image">
+                    <div class="overlay overlayTop"></div>
+                  </div>
+                  <div class="dim">
+                    <img src="static/images/i3.png" class="image">
+                    <div class="overlay overlayTop"></div>
+                  </div>
+                  <div class="dim">
+                    <img src="static/images/i4.png" class="image">
+                    <div class="overlay overlayTop"></div>
+                  </div>
+                  
+                </div>
+                
+              </div>
+         </div>
+    </div>
+</section>
+
+<!-- Contact Me section Start -->
+<section class="contact" id="contact">
+  <div class="content">
+    <div class="title"><span></span></div>
+    <div class="text">
+      <div class="topic">To know more about our products</div>
+      
+      <div class="button">
+        <button><a href = "https://smartinternz.com/">CLICK HERE</a></button>
+      </div>
+    </div>
+    <div class = "content" align = "center">
+      <form action = "/result" method = "post" enctype="multipart/form-data" >
+        <center>
+        <input type = "file" name = "i1" class = "form-control" autocomplete="off" required>
+      </center>
+        <div class = "button">
+          <button type="submit" value="submit">Submit</button>
+        </div>
+      </form>
+      <h1>{{info}}</h1>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section Start -->
+<footer>
+  <div class="text">
+    <span>Created By <a href="#">Mohan Thej</a> | &#169; 2022 All Rights Reserved</span>
+  </div>
+</footer>
+
+  <script src="static/script.js"></script>
+</body>
+</html>

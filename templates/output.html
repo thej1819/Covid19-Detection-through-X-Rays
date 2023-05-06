@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <title>Output</title>
+    </head>
+
+<script type = "text/css">
+    mar{
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background: #4070f4;
+            left: 0;
+            bottom: 0;
+          }
+    }
+</script>
+<body>
+    <div class = "mar">
+        <div class="flashes">
+            {% for message in get_flashed_messages()%}
+                <h1 align = "center">{{ message|safe }}</h1>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
